@@ -104,3 +104,10 @@ Argument #2 - object that describes the update we want to make.
 
 we never change Argument #1 directly,
 we must always return a value to be used as Argument #1.
+
+### useEffect:
+
+useState => run the arrow function **every time** the component is rendered.
+useEffect => run the arrow function **only** when the components is **first** rendered
+**and** when the **_value_ changes**. for example:
+`useEffect(() => {}, [value])`
